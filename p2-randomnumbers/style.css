@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+    font-family: Verdana;
+}
+#roll{
+    font-size: 3em;
+    padding: 5px 25px;
+    background-color:lightcyan;
+    color: hotpink;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#roll:active{
+    background-color: lightblue;
+}
+.labels{
+    font-size: 3em;
+}
