@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+/*display a particular screen*/
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+body{
+    background-color:rgb(240, 219, 194);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    background-color: white;
+    text-align: center;
+    width: 800px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/*start screen*/
+h1{
+    color: rgb(239, 115, 6) ;
+    font-weight: bolder;
+    font-size: 5rem;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+p{
+    font-size: 1.5rem;
+}
+#startbtn{
+    color: white;
+    background-color: hsl(28, 95%, 48%) ;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+#startbtn:hover{
+    background-color: hsl(21, 86%, 50%) ;
+
+}
+
+/*quiz screen*/
+#questext{
+    margin-top: 10px;
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+    color:hsl(28, 95%, 48%);
+}
+#quizinfo{
+    display: flex;
+    color: rgb(127, 125, 125);
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.optionbtn{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+    font-size: 1.8rem;
+    width: 97%;
+    border: none;
+    border-radius: 5px;
+    font-style: italic;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.optionbtn:hover{
+    background-color: rgb(236, 182, 137);
+}
+#progress-container {
+    width: 90%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+#progressbar {
+    width: 0%; 
+    height: 100%;
+    background-color: rgb(239, 115, 6);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+/*result screen*/
+#restartbtn{
+    color: white;
+    background-color: hsl(28, 95%, 48%) ;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+#restartbtn:hover{
+    background-color: hsl(21, 86%, 50%) ;
+}
+#finalscore{
+    font-weight: bold;
+    font-size: 2rem;
+    color: chocolate;
+
+}
+#maxscore{
+    font-weight: bold;
+    font-size: 2rem;
+    color: chocolate;
+}
