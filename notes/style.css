@@ -1,0 +1,15 @@
+body{
+    font-family: cursive;
+}
+
+
+/*event listner*/
+#mybox{
+    height: 300px;
+    width: 300px;
+    background-color: darkseagreen;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 4rem;
+}
